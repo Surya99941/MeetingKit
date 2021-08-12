@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=attendance
+Exec=attendance
+Icon=com.Surya99941.github.com
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true
