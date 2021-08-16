@@ -18,10 +18,7 @@
 
 #pragma once
 
-#include <gtkmm/builder.h>
-#include <gtkmm/headerbar.h>
-#include <gtkmm/label.h>
-#include <gtkmm/window.h>
+#include <gtkmm.h>
 
 class AttendanceWindow : public Gtk::Window
 {
@@ -29,7 +26,8 @@ public:
 	AttendanceWindow();
 
 private:
-	Gtk::HeaderBar *headerbar;
-	Gtk::Label *label;
+	Gtk::ScrolledWindow* ScrolledWindow;
+	Gtk::Viewport* VP;
+	Gtk::Box *MainBox;
 	Glib::RefPtr<Gtk::Builder> builder;
 };
